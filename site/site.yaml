@@ -5,6 +5,9 @@ copy:
     from: static/
     glob: "**/*.*"
     to: static/
+derived:
+  - static/js/**/*.js
+  - static/js/**/*.map
 pageGlobs:
   - "**/*.html"
   - "**/*.md"
@@ -18,3 +21,11 @@ variables:
   -
     name: nav_color
     value: bg-blue-900
+exec:
+  install:
+    - 
+      cmd: npm install
+  prebuild:
+    - 
+      cmd: npm run build
+  postbuild:

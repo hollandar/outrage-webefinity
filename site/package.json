@@ -1,0 +1,16 @@
+{
+  "name": "outrage-webefinity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run buildJs",
+    "buildJs":"tsc -p ./static/js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/grecaptcha": "^3.0.4",
+    "typescript": "^4.8.3"
+  }
+}

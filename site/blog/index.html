@@ -1,6 +1,9 @@
-<Document title="Blog" layout="blog.t.html"/>
+
+<Document title="Blog Index" layout="site.t.html"/>
+
 <DefineSection name="body">
-    <PageSection class="bg-white p-4 flex flex-col min-h-full">
-        <h1>Blog</h1>
+    <PageSection class="container mx-auto bg-white flex flex-col min-h-full">
+        <h1 class="pf-c-title pf-m-4xl">Our posts</h1>
+        <BlogIndex json="blog/documents.json"/>
     </PageSection>
 </DefineSection>

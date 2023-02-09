@@ -1,0 +1,12 @@
+{
+    "documents":[
+        {
+            "uri":"/blog/welcome-to-webefinity",
+            "title":"Welcome to Webefinity",
+            "summary":"Introducing Webefinity, we have been around for a while, but here we are!",
+            "by":"Adrian",
+            "img":"static/pexels.jpg",
+            "date":"3rd Oct, 2022"
+        }
+    ]
+}

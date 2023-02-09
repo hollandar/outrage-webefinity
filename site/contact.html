@@ -1,0 +1,100 @@
+<Document title="Contact Us" layout="site.t.html" />
+
+<DefineSection name="body">
+    <PageSection class="bg-white flex flex-col min-h-full container mx-auto">
+        <Panel>
+            <Header>
+                <h1>
+                    Contact Us
+                </h1>
+                <p>
+                    Enter your details below and we will respond to you as soon as practical.<br />
+                    You will not receive an automated response to your email address, we will contact you in person once
+                    we
+                    receive your note.
+                </p>
+
+            </Header>
+
+            <Body>
+                <form class="flex flex-col gap-4"
+                    action="https://u6jzbvjh3ztqrxltqoz6bhl6di0ailoo.lambda-url.ap-southeast-2.on.aws/" method="post"
+                    data-format="json">
+                    <input class="lib-offscreen" tabindex="-1" name="_name" type="text" />
+                    <div>
+                        <div>
+                            <label class="pf-c-form__label" for="name">
+                                <span class="pf-c-form__label-text">Name</span>
+                                <span class="pf-c-form__label-required" aria-hidden="true">&#42;</span>
+                            </label>
+                        </div>
+                        <div class="pf-c-form__group-control">
+                            <input class="form-input" type="text" id="name" name="name" autofocus required autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email_address">
+                                <span class="">Email Address</span>
+                                <span class="text-red-900" aria-hidden="true">&#42;</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="email" class="form-input" id="email_address" name="email_address" required autocomplete="off" />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="details">
+                                <span>Details</span>
+                                <span class="text-red-900" aria-hidden="true">&#42;</span>
+                            </label>
+                        </div>
+                        <div>
+                            <textarea rows="5" class="form-input" id="details" name="details" required autocomplete="off"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <button class="button button-primary" type="submit" name="submit">Submit</button>
+                            <button class="button button-secondary" type="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="search_working" class="lib-hidden py-8">
+                    <i class="fa-solid fa-spinner fa-spin-pulse fa-2xl"></i>
+                </div>
+
+                <div id="search_success" class="lib-hidden py-8">
+                    <Card aria-label="Alert" class="bg-green-100">
+
+                        <Title>
+                            <div class="flex flex-row gap-8 items-center">
+                                <div>
+                                    <i class="fa-solid fa-paper-plane fa-lg" aria-hidden="true"></i>
+                                </div>
+                                <div class="text-xl font-bold">
+                                    Success!
+                                </div>
+                            </div>
+                        </Title>
+
+                        <Body>
+                            <p>
+                                We have received your request and will respond via your email address shortly.
+                            </p>
+                        </Body>
+
+                    </Card>
+                </div>
+            </Body>
+        </Panel>
+    </PageSection>
+</DefineSection>
+
+<DefineSection name="script">
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6LeFa-QhAAAAAEIE4k21qrlwekprEQi0kURd43my"></script>
+    <script src="/static/js/formData.js" type="module"></script>
+</DefineSection>
