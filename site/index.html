@@ -1,49 +1,27 @@
 <Document title="Home" />
 <DefineSection name="body">
-    <PageSection class="bg-white p-4">
+    <PageSection class="bg-white flex flex-col min-h-full">
         <TwoUp>
             <Left>
-                <div class="prose md:prose-lg align-center">
-                    <h1>Verge Start</h1>
-                    <h2>Welcome to Verge.</h2>
+                <div class="prose md:prose-lg py-8">
+                    <h1>Webefinity</h1>
                     <p>
-                        Verge is a static site builder for the edge, for serverless.
+                        Webefinity is a consulting and software development company, specializing in internet and cloud solutions for small business.
                     </p>
                     <p>
-                        You already speak HTML and CSS, so its a small step to build websites quickly using Verge by
-                        reusing
-                        visual elements.
-                        Elements come from the underlying library, the theme, or are in your own site.
+                        We have been around a while now, we have helped businesses from 20 to 100 people,
+                        developed infrastructure for SalesForce,
+                        and bespoke CRM systems from Nurseries to Online Stores.
                     </p>
                     <p>
-                        Integrating front end libraries, like Patternfly via NPM is very easy.
-                        See the Patternfly theme for an example, start with theme.yaml, the theme configuration.
+                        We love <a class="link" href="/opensource">open source</a> software, we see it as one way to contribute our solutions back to our industry,
                     </p>
+                    <p>If you would like to contact us, you can do so via the <a class="link" href="/contact">Contact</a> page.</p>
                 </div>
             </Left>
             <Right>
                 <Picture src="/static/intro.jpg" />
             </Right>
         </TwoUp>
-
-        <div class="m-2 md:m-8">
-            <div class="prose md:prose-lg">
-                <h2>
-                    Verge Start Structure
-                </h2>
-                <p>You will find a couple of Git submodules in this repository:</p>
-                <ol>
-                    <li><strong>lib</strong> - A set of base pages that every Verge site needs.</li>
-                    <li><strong>themes/patternfly</strong> - A set of specific pages for the Patternfly theme.</li>
-                    <li><strong>site</strong> - Your content.</li>
-                </ol>
-                <p>When Verge looks for content, it searches site first, then theme, then lib. Copy anything you want to
-                    change
-                    into your site folder in the same location. You can change everything.</p>
-                <p>If you have proposals for changes to the underlying library, or changes to the Patternfly theme, you
-                    can
-                    always propose a pull request.</p>
-            </div>
-        </div>
     </PageSection>
 </DefineSection>

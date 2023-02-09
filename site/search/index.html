@@ -1,0 +1,47 @@
+<Document title="Search" />
+
+<DefineSection name="body">
+    <PageSection class="container mx-auto bg-white flex flex-col min-h-full">
+        <div class="m-4">
+            <h1>Search</h1>
+
+            <Card class="mb-8">
+                <Body>
+                    <form class="pf-c-form" id="search_form" novalidate>
+                        <div class="flex flex-row gap-4">
+                            <input class="flex-1 form-input" type="text" name="search_terms" autocomplete="off"
+                                placeholder="Enter search terms." />
+                            <button class="flex-none button button-primary" type="submit">Search</button>
+                            <button class="flex-none button button-secondary" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </Body>
+            </Card>
+
+
+            <div class="mb-8">
+                <h3>Search Results</h3>
+                <div id="search_results">No results yet.</div>
+            </div>
+
+        </div>
+    </PageSection>
+
+    <template id="ou_search_template">
+        <div class="mb-4">
+            <h5><a href="$(href)">$(title)</a></h2>
+                <p>$(description)</p>
+        </div>
+    </template>
+
+    <template id="ou_empty_results">
+        <div class="mb-4">
+            No matching pages found.
+        </div>
+    </template>
+
+</DefineSection>
+
+<DefineSection name="script">
+    <script src="/static/js/lib/search.js" type="module"></script>
+</DefineSection>

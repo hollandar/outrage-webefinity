@@ -5,8 +5,25 @@
             "link":"/"
         },
         {
-            "label":"Google",
-            "link":"https://google.com"
+            "label":"Products",
+            "link":"/products"
+        },
+        {
+            "label":"Blog",
+            "link":"/blog"
+        },
+        {
+            "label":"Open Source",
+            "link":"/opensource"
+        },
+        {
+            "label":"Contact",
+            "link":"/contact"
+        },
+        {
+            "label":"Search",
+            "link":"/search"
         }
+
     ]
 }
